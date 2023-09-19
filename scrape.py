@@ -1,28 +1,44 @@
-import requests
 from bs4 import BeautifulSoup
 import pandas as pd
-import json
 import csv
+import re
+
+#
+# Sample format of file I want to extract 
+"""
+<h2>Date1</h2>
+    <ol>
+        <li>Part1_of_row1: <a href="url_for_row1">Part2_of row1</li>
+        .
+        .
+        .
+        <li>Part1_of_rown: <a href="url_for_rown">Part2_of rown</li>
+    </ol>
+<h2>Date2</h2>
+.
+.
+.
+
+""" 
 
 
 with open("2023JobHunting.html", "r") as og_file:
     page = str(og_file.read())
 
-table_soup = BeautifulSoup(page, "html5lib")
+soup = BeautifulSoup(page, "html5lib")
 
 
-"""
-for i,row in enumerate(applications):
-    print("row",i,"is",row)
-    cells=row.find_all('span')
-    for j,cell in enumerate(cells):
-        print('colunm',j,"cell",cell)
-"""
+
+#TODO find a way to retain the date from each H2
+# possibly first run a findall on the H3?
+
+#create a python list from all li html tags, gives a row for each li
+list_input = soup.findAll(name=["li"])
+
+#TODO need to strip html tags from the list items
+#Can I use decompose?
 
 
-list_input = table_soup.findAll(name=["li"])
-
-#print(list_input)
 
 with open('scrape.csv', 'w', newline='') as file:
     # Step 4: Using csv.writer to write the list to the CSV file
