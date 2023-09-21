@@ -22,7 +22,7 @@ import re
 """ 
 
 
-with open("2023JobHunting.html", "r") as og_file:
+with open("myfile.html", "r") as og_file:
     page = str(og_file.read())
 
 soup = BeautifulSoup(page, "html5lib")
