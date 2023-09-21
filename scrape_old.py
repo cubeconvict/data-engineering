@@ -1,5 +1,7 @@
 from bs4 import BeautifulSoup
 import pandas as pd
+import csv
+import re
 
 #
 # Sample format of file I want to extract 
@@ -20,30 +22,31 @@ import pandas as pd
 """ 
 
 
-with open("myfile.html", "r") as og_file:
+with open("2023JobHunting.html", "r") as og_file:
     page = str(og_file.read())
 
 soup = BeautifulSoup(page, "html5lib")
 
-list_items = soup.find_all('li')
+
+
+#TODO find a way to retain the date from each H2
+# possibly first run a findall on the H3?
 
 #create a python list from all li html tags, gives a row for each li, [1] of each item in the list is everything that was between <li> and </li>
-#soup = soup.findAll(name=["li"])
+soup = soup.findAll(name=["li"])
 
-#separate each li in the soup object into columns
 list_output = []
-for li in list_items:
-    company = li.find_all('span')
-    row = [li.text for li in company]
-    list_output.append(row)
-df = pd.DataFrame(list_output, columns=["Company", "Role","C","D","E"])
+for child in soup:
+    for a in child:
+        list_output.append(a)
 
-#clean up some crap in the Company column
-df["Company"] = df["Company"].str.replace(':','')
-df["Company"] = df["Company"].str.strip()
+
 
 
 with open('scrape.csv', 'w', newline='') as file:
-    df.to_csv('scrape.csv')
+    # Step 4: Using csv.writer to write the list to the CSV file
+    writer = csv.writer(file)
+    writer.writerows(list_output) 
+    # Use writerow for single list
 
 

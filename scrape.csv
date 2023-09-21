@@ -1,496 +1,497 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+,Company,Role,C,D,E
+0,Fragomen,Infrastructure Program Manager,,,
+1,Eliassen Group ·,Program Manager,,,
+2,Onward Search,Technical Program Manager [72430],,,
+3,Harvey Nash USA,Program Project Manager,,,
+4,Russell Tobin,Program Manager,,,
+5,Tredence Inc.,Technical Program Manager,,,
+6,Judge Group,Technical Program Manager I,,,
+7,Infosys,Program Manager with Litify,,,
+8,PanasonicWELL,"Senior Technical Program Manager (AI, Data and Infrastructure)",,,
+9,AMD,Senior Program Manager,,,
+10,Program Manager,: Systems Integration Solutions · ,,,
+11,Project Manager (Life Sciences/Biotech Industry),: Biotage,,,
+12,AMD Senior Program Manager,,,,
+13,Square,"Technical Program Manager, Sales & Account Management",,,
+14,Visa,Technical Program Manager - Cybersecurity PMO," (unfortunately, I used my PM, not TPM resume for this one)",,
+15,Workiva,R&D Program Manager,,,
+16,Stand 8,Senior Program Manager,,,
+17,ClifyX,: ,Data Program Manager,,
+18,Rapdev,Technical Project Manager,,,
+19,Brightcove,Staff Analytics Engineer," (longshot, but it will hopefully get me into their system)",,
+20,Holy Grail,Program Manager,,,
+21,DroisysProgram Manager Ownership Operations,,,,
+22,Amiseq,Global Program Manager,,,
+23,Flywire,"Program Manager, People Team",,,
+24,Riot Games,"Senior Technical Program Manager - Riot Data Products, Data as a Service",,,
+25,Intel,"Program Manager, M&A",,,
+26,Abbott Quality Professional Technical Writer (31066027),,,,
+27,Workday,Sr. Program Manager,,,
+28,Vivo,Technical Project Manager,,,
+29,STAND 8 Technology Services,·Project Manager,,,
+30,Synergis,Technical Program Manager,,,
+31,Huntington National Bank,Senior Data Strategy Project Manager,,,
+32,Wex,Sr Technical Project Manager,,,
+33,Symetra,Senior Technical Program Manager,,,
+34,Citius,Senior Program Manager,,,
+35,,Infrastructure Program Manager (Remote), at ,Codeforce 360.,
+36,Program Manager, at ,AgreeYa Solutions.,,
+37,Cybercoders,Software Project Manager,,,
+38,Elastic,TPM,,,
+39,Upwork,Senior Program Manager - Accounting,,,
+40,Harness.io,Technical Program Manager Customer,,,
+41,Nextdeavor,Technical Program Manager,,,
+42,Red Cross,Disaster Program Manager," ( half assed application, it needed a cover letter)",,
+43,ASML,Senior Technical writer,,,
+44,Upwork,Senior Program Manager - Accounting,,,
+45,Optomi Professional Services,Program Manager,,,
+46,Crystal Equation Corporation,Technical Program Manager,,,
+47,Averity,Technical Program Manager,,,
+48,WaferWire Cloud Technologies,Technical Program Manager,,,
+49,Jobot,Technical writer,,,
+50,Circle,Technical Writer,,,
+51,Clayco,Technical Program Manager,,,
+52,Central Coast Alliance for Health Quality Improvement Program Advisor IV,,,,
+53,Beacon Hill Technologies,Remote Technical Program Manager (Content Security),,,
+54,Talent Burst”,TPM,,,
+55,Russell Tobin,Technical Program Manager," Almost immediate call from recruiter, this is with Adobe. W2 with Russell Tobin. Candis.",,
+56,Lighthouse,Digital Forensics Project Manager,,,
+57,Phasium,Project Manager,,,
+58,Apex Systems,Project Manager: (retail Industry),,,
+59,Planet,TPM, (Kelli Lidwell works here),,
+60,Fortanix,"Director, Technical Writing",,,
+61,Cavnue,Technical Program Manager - Software / Machine Learning,,,
+62,Booz Allen Hamilton,Integrated Project Lead,,,
+63,Fingerprint for Success Technical Program Manager,,,,
+64,ProFocus Technolocy,Technical Program Manager,,,
+65,STAND 8 Technology Services,Program Manager,,,
+66,Pegasys Solutions Project Manager,,,,
+67,Yubico,Technical Program Manager,,,
+68,Chainlink,Program Manager - Performance and Development,,,
+69,A10,Operations Program Manager (Contract),,,
+70,Thermo Fisher,Program Manager,,,
+71,PDS Tech, Program Manager,,,
+72,Microsoft,Senior Program Manager,,,
+73,York Solutions,SAAS Technical Program Manager,,,
+74,kForce Job Title Program Manager Reference Code 2085195-TVT,,,,
+75,Nvidia Technical Writer - NVIDIA Omniverse,,,,
+76,Cisco,Program Manageer - Talos,,,
+77,Dropbox,Technical Program Manager,,,
+78,Service Now,Senior Technical Program Manager,,,
+79,Intuitive,Senior Project Manager,,,
+80,CACI,Senior Program Manager (285374),,,
+81,Palo Alto Networks,Sr Event Technologist Program Manager,,,
+82,Cupertino Electric,Project Manager - Data Center,,,
+83,Symetra Sr. Technical Program Manager - 7446,,,,
+84,Alameda Health System,"Enterprise Project Manager, PMP-ePMO, Remote, Full Time, Benefited, Days, 8hours, 1.0fte, Alameda Health System",,,
+85,Genesis10,Data Scientist/ Product Analyst,,,
+86,Genesis10,Project/Program Manager,,,
+87,Google,"Technical Writer, Google Cloud Databases - Remote; California or Remote; United States",,,
+88,CGS,"Sr Project Manager (software/ SAAS/ WFM) Hybrid/ Remote- Orange, CA",,,
+89,Black and Veatch,Deputy Program Manager (99634),,,
+90,IFG,,,,
+91,HP,"AI/ML Readiness-Technical Product Management, DAO",,,
+92,Drata,Technical Writer,,,
+93,Covetus,Content Manager,,,
+94,Form,Program Manager,,,
+95,Tiktok,Process and Product Program Manager,,,
+96,Discord,Senior Technical Program Manager - Data Governance,,,
+97,Researched the UCSC Extension coursework,https://www.ucsc-extension.edu/courses/certificate/data-science-and-data-analytics/,,,
+98,Started this one,https://www.coursera.org/specializations/jhu-data-science,,,
+99,Emailed UI Online about California Training Benefits program for funding UCSC Extension Classes,,,,
+100,U.S. Tech Solutions,Technical Program Manager,,,
+101,Xoriant,Technical Program Manager,,,
+102,Arthur Lawrence,Senior Technical Program Manager,,,
+103,Matician,Technical Program Manager,,,
+104,Maven,"Lead Technical Program Manager, Core Platform",,,
+105,Cruise,"Senior Technical Program Manager II, Simulation",,,
+106,W3Global,"Technical Program Manager, Data Science (Marcom)",,,
+107,Arthur Lawrence,Senior Technical Program Manager,,,
+108,Judge Group,Technical Program Manager,,,
+109,Ayar Labs,Program Manager Engineering,,,
+110,Intelliswift,Program Manager (Non IT) III,,,
+111,Hinge Health,Business Analytics Manager,,,
+112,Jade Global,Project Manager,,,
+113,Applied Materials,technical Project Manager - Supply Chain (E4),,,
+114,Jabil,Operations Project Manager,,,
+115,Joby,System Test Program Manager,,,
+116,Pinnacle group,Biocompatibility Program Manager,,,
+117,Rose International via Caljobs Technical Project Manager II (Job has reached maximum number of applicants).,,,,
+118,Rose International Project Manager        447863,,,,
+119,Weee!,Technical Program Manager,,,
+120,Verint,"Sr. Program Manager, PMO",,,
+121,Crowdstrike,Project Manager - Services TechOps (Remote),,,
+122,Echo IT Solutions,Program Manager,,,
+123,Simple Healthkit,Program Manager,,,
+124,TekSystems,Program Manager,,,
+125,Focus KPI,Program Manager,,,
+126,Motional,"Principal Technical Program Manager, AV Programs",,,
+127,Lumen,Lead Project Manager - Remote US Locations (329747),,,
+128,Grant Thornton,Experience Assurance Tester,,,
+129,NVidia,"Senior Technical Program Manager, IT Data Center Infrastructure",,,
+130,Technical Project Manager - Data Platform Implementation,,,,
+131,Walmart,SeniorSenior Technical Program Manager - Engineering Programmer Analyst,,,
+132,Nutanix Senior Technical Program Manager - Engineering,,,,
+133,Zscaler,"Program Manager, Cloud Operation Problem Management Program",,,
+134,Magnit (Paypal contractors),Project Managers,,,
+135,Zaelab,Project Manager,,,
+136,Russel Tobin,Program Manager - CapEx Automations,,,
+137,Modis,Content Manager,,,
+138,Ebay,"Sr. Program Manager, Core Product",,,
+139,SimplePractice,Lead Program Manager,,,
+140,Scribd,Senior Technical Program Manager,,,
+141,Walmart,"Program Manager, Technology Operations",,,
+142,Redcloud Consulating,Program Manager,,,
+143,Intel,Project/Program Manager Technical,,,
+144,Yahoo,Senior Technical Program Manager,,,
+145,Twitch,Principal Technical Program Manager,,,
+146,SoFi,Learning Experience Program Manager,,,
+147,Wipro,AI/ML Project Manager,,,
+148,Walmart Programmer Analyst (Senior Technical Writer),,,,
+149,Motorola,Project Manager,,,
+150,Affirm,Senior Technical Program Manager (Infrastructure),,,
+151,United Software Group Sr. Project Manager,,,,
+152,Adobe,Program Manager,,,
+153,Nvidia,"Senior Technical Writer, Deep Learning Products",,,
+154,Airbnb,"Manager, Content and Knowledge Management Product Operations", (messaged connection ,Tamera Scholz, from VMware)
+155,Microsoft,Senior Hardware Engineering Program Manager,,,
+156,Danaher,Program Manager,,,
+157,Synergy,Senior Program Manager,,,
+158,Zscaler,"Program Manager, Cloud Operations/Data Center",,,
+159,Bluecore,Technical Program Manager,,,
+160,Avenue Code,Program Manager,,,
+161,TekSystems,Program Manager(JP-003956146),,,
+162,"Spatial Fron, Inc.",Senior Project Manager,,,
+163,Maximus,Project Manager,,,
+164,Moxion Power,"Senior Program Manager, Field Operations",,,
+165,Veeco,Senior Program Manager,,,
+166,Ankura,"Senior Technical Project Manager, Data & Technology",,,
+167,Microsoft,Senior Continuous Improvement Program Manager,,,
+168,Microsoft,Innovation Team Program Manager,,,
+169,Epiq,Program Manager,,,
+170,Twilio,Technical Program Manager,,,
+171,Apple,Audio Engineering Program Manager,,,
+172,GitLab,"Associate Program Manager, Customer Success Enablement",,,
+173,Google/Alphabet/X,"Technical Program Manager, Project Tapestry", (‘clever’ cover letter),,
+174,Grid Dynamics,Technical writer: ,,,
+175,Skillsoft,PRINCIPAL PROGRAM MANAGER - DATA INITIATIVES APPLICATION,,,
+176,Intuit,Staff Technical Program Manager,,,
+177,Riverside Staffing,https://www.linkedin.com/jobs/view/3671824629,,,
+178,Nvidia,"Technical Program Manager, Data Center",,,
+179,Nvidia,Senior Technical Program Manager - AI,,,
+180,Nvidia,Senior Software Technical Program Manager - Compute Platform,,,
+181,Redpanda Data,Senior Technical Writer,,,
+182,Toyota Research Institute,Program Manager,,,
+183,Cloud Haven Solutions Technical Writer (Glassdoor),,,,
+184,Intuitive Surgical,Program Manager,,,
+185,Clickhouse,Technical Writer,,,
+186,Splunk,"Sr Program Manager, Business Operations",,,
+187,Reached out to hiring contact on linkedIn for,Senior Documentation Manager ,at Snorkel AI.,,
+188,Looks like Enda is at Bloom Energy.  I reached out in regards to an application I entered last week,,,,
+189,‘Applied’ to Harman International Recruiter for a contract role as a tech writer at VMware via a LinkedIn message,,,,
+190,Rivian,Sr. Technical Program Manager,,,
+191,Snowflake,"Senior Technical Program Manager, Security (6857328002)",,,
+192,OpenZeppelin,Technical Writer Editor,,,
+193,Billion to One,Technical Project Manager,’,,
+194,Betteromics,Program Manager,,,
+195,Northrup Grumman,Program Manager 2,,,
+196,"Northrup Grumman Principal Technical Services Project Manager/Senior Principal Technical Services Project Manager , requisition ID R10115615",,,,
+197,https//www.linkedin.com/jobs/view/3670066122/,,,,
+198,Radley James,Technical Program Manager,,,
+199,Cypress HCM,Engineering Project Manager,,,
+200,Trackonomy,Program Manager,,,
+201,BrickRed,Technical Program Manager-Mixed Reality,,,
+202,BayOne,Technical Program Manager,,,
+203,Recruiter Call with Mindlance for Adobe,Product Delivery Manager, ,,
+204,Walmart,"Senior Program Manager, Technology Operations",,,
+205,Muon Space Technical Program Manager,,,,
+206,Nvidia,Senior Inventory Program Manager,,,
+207,Archer,"Senior Technical Project Manager, Information Technology",,,
+208,Dremio,Staff Technical writer,,,
+209,CyberARK,Technical Program Manager,,,
+210,Awesome Motive Technical Content Writer,,,,
+211,Epiq,Operations Transformation Program Manager,,,
+212,Salesforce,Senior/Staff/Lead Technical Writer - Commerce,,,
+213,HDR,Technical Project Manager - (174432),,,
+214,Apple,Developer Publications Engineering Project Manager,,,
+215,Bloom Energy,Program Manager - Service Engineering,,,
+216,Vizient,Lead Program Services Manager,,,
+217,Integris,TPM, (contract),,
+218,Microsoft,Program Manager II,,,
+219,Microsoft,Senior Program Manager - Site Acquisitions,,,
+220,Figma,Program Manager - Web Experience,,,
+221,Yahoo Finance,Sr Technical Program Manager - Yahoo Finance,,,
+222,Snorkel AI,Technical Program Manager,,,
+223,TeamRaft,Technical Writer,,,
+224,Ivy Rehab Network,"Technical Project Manager, Analytics & Insights",,,
+225,Reddit,Staff Technical Program Manager - Infrastructure,,,
+226,Lumen,TECHNICAL PROJECT MANAGER I (329506),,,
+227,Air BnB,Staff Technical Program Manager- Data Privacy,,,
+228,Avenue Code,Project Manager,,,
+229,Grant Thornton,IT Project Manager,,,
+230,IPM,"Senior Project Manager / Program Manager, Pharmaceuticals and Biotechnology",,,
+231,Okta,Principal Technical Writer,,,
+232,OKta Technical Program Manager,,,,
+233,Ford,Program  Manager,,,
+234,Pinnacle Group,Technical Program Manager,,,
+235,CyberCoders,TPM,,,
+236,Ankura,"Senior Associate, Information Technology Project Manager, Data & Technology (Remote)",,,
+237,Luxoft,Principal Program Manager,,,
+238,Minitab,Technical Program Manager,,,
+239,Pinnacle Group (Contracts),Program Manager,,,
+240,Microsoft,Senior Technical Program Manager (1590487),,,
+241,Modis,23397314 - Program Manager II,,,
+242,LogicMonitor,Senior Technical Writer,,,
+243,Udacity,Senior Technical Content Developer - Autonomous/Embedded Systems,,,
+244,Smart Things,Technical Program Manager,,,
+245,Parkworks,Technical Project Manager,,,
+246,Photon,Technical Writer,,,
+247,Applicantz,,,,
+248,Cloudflare,"Technical Program Manager, Security",,,
+249,Netflix,Content Designer,,,
+250,Netflix,"Senior Program Manager, Finance",,,
+251,Akorbi,Program Manager ,(contract),,
+252,Proton,Senior Program Manager,,,
+253,Avalara,Senior Technical Program Manager,,,
+254,Figma,Operations Program Manager,,,
+255,AllCloud,AWS Technical Project Manager, (cover letter & funny ‘personal note’),,
+256,Databricks,Sr. Technical Program Manager - Release Management role ,,,
+257,Nvidia,"Senior Technical Program Manager, Cloud and Datacenter",,,
+258,KNowesis Technical Writer,,,,
+259,DataBento,API Documentation Engineer,,,
+260,Vertex,"Project Management Associate Director, Publications (Remote)",,,
+261,Planet Technologies,Senior Project Manager,,,
+262,AMD,Senior Program Manager, (cover letter),,
+263,Updater,Lead Technical Writer, (cover letter),,
+264,Google,"Technical Program Manager III, Google Photos, Creative Experiences - Mountain View, Chicago, New York or Remote; California",,,
+265,Relativity,Security Program Manager, (cover letter),,
+266,VGS (Very Good Security),Sr. Technical Program Manager,,,
+267,Tesla,Technical Project Manager – Drive Unit & Drive Inverter Test,,,
+268,SaxonAI,Project Manager,,,
+269,CNH Industrial,"Precision Technology Program Manager, Connectivity Products and Features",,,
+270,Walmart,Staff Technical Program Manager,,,
+271,Hilton,Senior Manager Data Governance ( COR013S8),,,
+272,Snowflake,Senior Technical Program Manager (4431348002),,,
+273,Technical Documentation Lead position with Redis,,,,
+274,Service Titan,Senior Technical Program Manager,,,
+275,Pinnacle Group,Technical Project Manager,,,
+276,Simple Tire,"Program Manager, Enterprise Analytics (Remote)",,,
+277,ITCO,,,,
+278,OneTrust,Principal Technical Program Manager (Remote),,,
+279,Microsoft,Technical Program Manager (1582507),,,
+280,Pager Duty,Technical Program Manager, (,cool cover letter,)
+281,Avenue Code,Program Manager,,,
+282,Splunk,Cloud Ops Problem Manager, (not exactly qualified. No cover letter),,
+283,Forge,Senior Program Manager,,,
+284,Fitbit,"Technical Program Manager III, Fitbit - United States",,,
+285,Palo Alto Networks,Senior Technical Program Manager (Information Security),,,
+286,Jazz,"Senior Manager, Medical Writing (Remote)",,,
+287,Astra,Senior Technical Program Manager - Astra Spacecraft Engines (ASE),,,
+288,GitLab,Staff/Principal Infrastructure Technical Program Manager (TPM),,,
+289,Ledgent,Technical Program Manager (Staff to Senior Staff) (JO-2307-209511),,,
+290,Joby,Documentation Engineer, I did a great cover letter for this one and would love to get this job!,,
+291,Modular,"Technical Program Manager, Customer Success",,,
+292,Netwrix,Staff Technical Writer,,,
+293,Amwell,Technical Program Manager,,,
+294,Flywire,Technical Writer,,,
+295,Engage PSG Search,Technical Project Manager,,,
+296,Modern Campus,Technical Project Manager,,,
+297,Phone Screen,,,,
+298,Digital Harbor,Technical Project Manager,,,
+299,AllSTEM Connections,Senior Technical writer - Cybersecurity,,,
+300,NetX,Technical Project Manager,,,
+301,Riviera Partners,Technical Project Manager,,,
+302,Tesla,"Program Manager, Analytics & Automation",,,
+303,Netflix,Technical Program Manager - Content Infrastructure and Solutions,,,
+304,Fanatics,Technical Project Manager,,,
+305,Proofpoint,Technical Project Manager,,,
+306,"TikTok Technical Project Manager, CDN",,,,
+307,Upbound,Product Documentation Engineer,,,
+308,What would you say are some of the biggest challenges for the engineering team at Knack?,,,,
+309,What is going well right now?,,,,
+310,What needs to change?,,,,
+311,What’s the biggest area of conflict between engineering and the rest of the company?,,,,
+312,Tell me about your development and deployment environments.,,,,
+313,How would you describe the corporate culture?,,,,
+314,What’s the most common complaint within the engineering organization?,,,,
+315,What do you think would be the mark of success for this role?,,,,
+316,What do customers need most from Knack right now?,,,,
+317,IMG Academy/ Endeavor,Technical Program Manager,,,
+318,AMCS,Senior Program Manager,,,
+319,Flywire,Technical Writer," (no cover letter, submitted TPM resume to tech writer role by accident)",,
+320,Meta,Security Program Manager,,,
+321,CloudFlare,"Technical Program Manager, Support", (did not include cover letter),,
+322,Joby,"Project Manager, Manufacturing Plan Development",,,
+323,Wolters Kluwer,Technology Project & Program Manager,,,
+324,Snorkel AI,Senior Documentation Manager,,,
+325,Sibylline Senior technical program manager,,,,
+326,Stralyn,Senior Technical Program Manager,,,
+327,Adobe,Partner Program Manager (R137986),,,
+328,Wipro,technical Project Manager,,,
+329,PunchThrough,Technical project manager,,,
+330,Tek Systems,Technical writer,,,
+331,Perficient,Technical Project Manager, (not qualified?),,
+332,Is this a backfill?,,,,
+333,Tell me more about the operations excellence team.,,,,
+334,"I have worked with formal document control of processes in accordance with  Good Manufacturing Practices, ISO regulations and in some cases healthcare restrictions.  Is this document control project going to be something like that (certifications) or does it start simply as internal process control?",,,,
+335,Are there already favored tools in place or is this starting from scratch?,,,,
+336,How would you describe the company culture?  Especially in the office?,,,,
+337,Snowflake,Senior Technical Program Manager,,,
+338,Dremio,Staff Technical Writer,,,
+339,Intuitive Surgical,Technical Writer II," did not apply, Salary is specified and is far below acceptable ($120k)",,
+340,Weights & Biases,"Programmer Writer, Documentation (Remote)",,,
+341,Ursus Program Manager 4 23-01031,,,,
+342,Meta,Documentation Engineer,,,
+343,Meta Product Technical Program Manager,,,,
+344,Mineral,Technical Program Manager,,,
+345,"Synergistech Staff Sr Tech Writer, user & sysadmin doc, Santa Clara.",,,,
+346,MNTN,Technical Project Manager,,,
+347,Atos Syntel,Technical Program Manager,,,
+348,BGSF,Technical Project Manager,,,
+349,Nuvolo,Program Manager,,,
+350,Coinbase,Technical Program Manager,,,
+351,Salesforce,Renewals Technical Programs & Tools Manager,,,
+352,Amazon,Senior Technical Program Manager (TPM- HW Sustaining)  (Level 6),,,
+353,Intuit,Staff Technical Program Manager,,,
+354,EVConnect,Technical Project Manager,,,
+355,Five9,Senior Technical program Manager,"  (Not very qualified, lots of federal stuff required)",,
+356,Blue Voyant,Technical Project Manager,,,
+357,DocuSign,"Sr. Technical Program Manager, Product Led Growth",,,
+358,Storm3,Senior Technical Program Manager,,,
+359,Lyra,Sr. Business Analyst/Program Manager, ,,
+360,Splunk,Product Manager - Infrastructure,,,
+361,"Shift Paradigm,",Sr Technical Project Manager,,,
+362,Cruise,"Manager II, Ops Process and Document Control", (phone screen),,
+363,Tiktok,TPM,,,
+364,Hinge health,Senior Security Program Manager (Remote),,,
+365,Whatnot,Technical Program Manager,,,
+366,TextNow,Technical program Manager,,,
+367,Designit,Program Manager,,,
+368,Recogni,Technical Writer,,,
+369,Cruise,Senior Technical Program Manager,,,
+370,Senior Technical Program Manager at AERDF,,,,
+371,Ambient Photonics Project Manager,,,,
+372,SiMa.ai,MTS Technical writer,,,
+373,EasyPost,Technical Program Manager,,,
+374,Bestinfo Systems,Senior Program Manager," (recruiting firm, I couldn’t find the company)",,
+375,Technovert,"Technical writer, (Contract)",,,
+376,Protocol Labs,"Technical Program Manager, Spaceport",,,
+377,Block,Associate technical program manager, (looks very cool.  I’d like this one!),,
+378,Autodesk,"Technical Program Manager, XR (Remote Americas)", (not very well qualified),,
+379,Mason,Technical Program Manager,,,
+380,"Rivian Sr. Program Manager, Service Global Expansion & Strategic Partnerships - RIV 5",https://us-careers-rivian.icims.com/jobs/11524/sr.-program-manager%2c-service-global-expansion-%26-strategic-partnerships---riv-5/job?mode=submit_apply,,,
+381,Flyr Technical Program Manager,https://boards.greenhouse.io/flyr/jobs/4241031006,,,
+382,Paypal,R0102918 Senior Program Manager,,,
+383,Blockchains Technical Project Manager,,,,
+384,Wasabi,Program Manager,,,
+385,Moody’s,Project Manager,,,
+386,Fedex,Program Manager Lead,,,
+387,"Resolvit, Technical writer",https://www.linkedin.com/jobs/view/3629569603/?alternateChannel=search&refId=4jf0ILEzKRtFQPRHEKkxyw%3D%3D&trackingId=PqJCs9jh6V6bIJr%2FnPlgHg%3D%3D,,,
+388,"Henderson Scott, technical writer",https://www.linkedin.com/jobs/view/3628682423/?alternateChannel=search&refId=4jf0ILEzKRtFQPRHEKkxyw%3D%3D&trackingId=poF945L1ATlGJPDuQ60g1w%3D%3D,,,
+389,Woven by toyota,,,,
+390,Technical Program Manager - Service Operations and Site Reliability Engineer,,,,
+391,"Amazon/AWS Senior PM-T, Search Customer Experience (Level 6)",,,,
+392,DataStax,Technical Program Manager (Remote US), ( I think I added cover letter info with the wrong name in it :( ),,
+393,Maxonic,Program Manager,,,
+394,Pure Storage,"Program Manager, Integrated Operations",,,
+395,Asana,Product Operations Program Manager,,,
+396,Microsoft,Senior Technical Program Manager,,,
+397,"Figma, Technical Program Manager - Product",https://boards.greenhouse.io/figma/jobs/4895987004, (no cover letter),,
+398,Tesla,https://www.tesla.com/careers/search/job/technical-program-manager-193699?source=LinkedIn,,,
+399,FICO Technical Program Manager,,,,
+400,Aurora Solar Senior Progam Manager,,,,
+401,Zeektex,https://www.linkedin.com/jobs/view/3623862782/?refId=046a367b-d51b-4ce8-91c9-f4d0bea84b39&trackingId=B5iF%2BZIf3tlN8nS3d1HXUw%3D%3D,"  (Contract, low pay, telephony, not qualified really)",,
+402,https//jobot.com/details/technical-project-manager/e4763f1400?utm_source=DigestAlert&utm_campaign=A&utm_medium=SimilarCandidate_JobTitle,,,,
+403,Crowdstrike,https://www.linkedin.com/jobs/view/3624298247/,,,
+404,PlusAI,https://jobs.lever.co/plus-2/20ff10b0-003c-40b4-b4a0-e2a36141e901, (no cover letter),,
+405,Aveva,Senior Technical Writer,,,
+406,Lucid Senior Manager Technical Communications,,,,
+407,Predict Spring Staff Technical Writer,,,,
+408,4x jobs at Amazon,https://account.amazon.jobs/en-US,,,
+409,Amazon Sr Technical Program Manager (Level 6),https://www.amazon.jobs/en/internal/jobs/2368538/sr-technical-program-manager, ,,
+410,Amazon,"Sr. Technical Program Manager, AR (Augmented Reality), Visual Search and Augmented Reality (Level 6)",,,
+411,Cogniac,Technical Program Manager,,,
+412,Consensys,Technical Program Manager (DevEx & Snaps),,,
+413,TikTok,"Senior Technical Writer, API",,,
+414,Microsoft,Business Program Manager,,,
+415,Jobot,Technical writer,,,
+416,Okta,Senior Technical Writer (Customer Identity),,,
+417,Tesla,Knowledge Base Program Manager,,,
+418,Tried to apply to Rocket Lawyer TPM,https://www.linkedin.com/jobs/view/3603129811, but the website wouldn’t submit my application,,
+419,Beacon Hill Staffing Group,Remote Lead Technical Writer,,,
+420,Twilio,Technical Program Manager (Infosec),,,
+421,GAMA,Scientific Technical Writer,,,
+422,Avantor/VWR,Senior Program Manager,,,
+423,Cube,Technical Content Writer,,,
+424,AnChain.ai,Technical Project Manager, (could have InMailed the recruiter but didn’t.  My qualifications for this are iffy because they want someone with blockchain experience).,,
+425,Zillow,Senior Technical Program Manager,,,
+426,Trustwave,Senior Technical Project Manager,,,
+427,"Did not apply to e2F,",Technical writer,", reviews of the company are terrible",,
+428,AWS,"Sr. Technical/Engineering Program Manager , AWS Neuron (Level 6)",,,
+429,AWS,Tech Infra Program Manager (Level 6), (also emailed the hiring manager),,
+430,Datadog,Technical Writer,", ",cover letter,
+431,Optomi,Lead Technical Writer,", messaged recruiter via LinkedIn",,
+432,Contract, DevDocs: ,Senior Technical Writer - API Documentation & Migration,,
+433,Asset Panda,Technical Writer,,,
+434,"Technical Program Manager II, Google Fi, Privacy",,,,
+435,Databricks,Senior Technical Writer,,,
+436,Databricks Senior Program Manager,,,,
+437,Airbyte,"Program Manager, API Connectors",,,
+438,Snowflake,Senior Content Developer,,,
+439,Tanium,Associate Technical Writer,,,
+440,Revacomm, Technical Writer,,,
+441,Dell,cybersecurity Technical writer, (No longer available),,
+442,NeatEase Games,Senior Technical Program Manager,,,
+443,Portnox,Technical Writer,,,
+444,Treasure Data,Senior Program Manager - Product Team,,,
+445,Forcepoint,Senior Technical Project Manager,,,
+446,Atlassian,"Senior Program Manager, Enterprise trust",,,
+447,Posted to LinkedIn about my blog.,,,,
+448,Emailed Stephen Baille about a job at Databricks.  It looks like they have a few different ones in which I’d be interested. Like this one,https://www.databricks.com/company/careers/product/senior-technical-writer-6745865002?gh_jid=6745865002&gh_src=62a881d62,,,
+449,Jess got a contact at Adobe and I sent her my resume for,https://careers.adobe.com/us/en/job/ADOBUSR136916EXTERNALENUS,,,
+450,David Hunter contacted me about a writer role.,,,,
+451,LinkedIn,Senior Technical Program Manager,,,
+452,Sonos,Technical Project Manager, (looks really cool!),,
+453,ExtraHop,Technical writer: ,,,
+454,Paypal,Data Science Program Manager,,,
+455,Phoenix Cyber,Technical writer,,,
+456,General Radar Corp,Technical Writer, (radar hardware startup!),,
+457,Gitlab,Technical Writer,,,
+458,SMTC,Senior Program Manager, electronics manufacturing company,,
+459,Exchanging messages with Michael to get an internal referral to Earnest TPM role,,,,
+460,LinkedIn messaged Cindy White about Illumio,,,,
+461,Adobe,Sr Engineering Program Manager (R136409),,,
+462,Google,"Senior Technical Writer, Content Strategy, Google Cloud - United States",,,
+463,Illumio,"Senior Program and Ops Manager, Product", (cover letter),,
+464,Earnest,Senior Technical Program Manager,,,
+465,Reached out to,Bala Iyer ,at Illumio about ,Senior Program and Ops Manager, but haven’t yet applied.  I am hoping that he can refer me first. Oops… he moved from there 3 weeks ago!
+466,Tesla,"Technical Writer, energy content",", (",cover letter,)
+467,Can you tell me more about why the company might be rated so poorly on Glassdoor?,,,,
+468,Where are most of the developers I’d work with located?,,,,
+469,In what timezone is most work completed?,,,,
+470,Is this a backfill or a new role?,,,,
+471,Brand new position,,,,
+472,Is Dictionary.com still Oakland based?,,,,
+473,,,,,
+474,"How mature is the PMO office?  That is, when was it formed and how developed are the organizational processes?",,,,
+475,Britelab,Program manager,,,
+476,Motiv,Senior Program Manager, - ,Cover Letter,
+477,Nvidia,Senior Technical Writer, ,,
+478,Joby Aviation,Senior Technical Writer,,,
+479,Google,"Technical writer, Google Cloud Networking.",,,
+480,"Bungie, TECHNICAL PROGRAM MANAGER, MACHINE LEARNING",https://careers.bungie.com/jobs/4995869/technical-program-manager-machine-learning,,,
+481,Virtusa Technical Writer/ Data Documentation Developer,https://www.linkedin.com/jobs/view/3572522189/?refId=970ee235-4e2d-4845-a0f3-c3ec19710d73&trackingId=xwnE%2BUNOTSWvJ3YR9yPj9g%3D%3D,,,
+482,"Netflix Program Manager, Documentation Management",https://jobs.netflix.com/jobs/271225362,,,
+483,ThoughtSpot Senior technical writer,https://www.thoughtspot.com/job/5021705?gh_jid=5021705,,,
+484,Amplitude Senior Technical Writer - Developer Docs,https://boards.greenhouse.io/embed/job_app?token=6739852002&gh_src=ab9f35b82&source=LinkedIn,,,
+485,Autodesk Technical Program Manager,https://autodesk.wd1.myworkdayjobs.com/en-US/Ext/job/Technical-Program-Manager_23WD69323-1,,,
+486,Brightspeed,Sr. Technical Program Manager -Network Architecture, (Cover Letter),,
+487,Rivian,https://boards.greenhouse.io/rivian/jobs/5589038003,  (no cover letter),,
+488,Rivian," Sr. Program Manager, Continuous Improvement",,,
+489,Workday,https://workday.wd5.myworkdayjobs.com/en-US/Workday/job/Sr-Associate-Technical-Writer--Career-Returner_JR-78151,,,
+490,Smartsheet,https://www.linkedin.com/jobs/view/3571791042/?refId=363e8d3b-ece0-48b2-8325-e73097c902c1&trackingId=SelGQfVqSEmrKXeRNpwKrw%3D%3D, (no cover letter),,
+491,Mcorp,Project Manager,,,
+492,ConGlobal,Technical Project Manager,,,
+493,"Crowdstrike,","Senior Program Manager, Data Science",,,
+494,"Dictionary.com,",Senior Technical Project Manager,,,
+495,DataDog,Senior Technical Writer,,,
