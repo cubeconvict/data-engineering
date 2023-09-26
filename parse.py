@@ -6,7 +6,7 @@ def Convert(myobject):
     return li
 
 # Read in the Google exported html page
-with open("2023JobHunting.html", "r") as og_file:
+with open("myfile.html", "r") as og_file:
     og_file_contents = og_file.read()
     #delete the google search prepend they added
     og_file_contents = og_file_contents.replace("https://www.google.com/url?","")
