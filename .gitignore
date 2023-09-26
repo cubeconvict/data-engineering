@@ -2,3 +2,5 @@
 *.csv
 *.json
 myfile.html
+from_stack_overflow.py
+from_stack_overflow_og.py
