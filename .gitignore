@@ -1,3 +1,4 @@
 #ignore all data files
 *.csv
 *.json
+myfile.html
