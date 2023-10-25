@@ -1,0 +1,18 @@
+{
+    "contents" : "# Plot number 4\n\n# Across the United States, how have emissions from coal combustion-related sources changed from 1999–2008?\n\n\nread.Interpret <- function() {\n  \n  \n  ## This first line will likely take a few seconds. Be patient!\n  NEI <- readRDS(\"summarySCC_PM25.rds\")\n  SCCdata <- readRDS(\"Source_Classification_Code.rds\")\n  \n  #head(NEI)\n  #head(SCC)\n  \n  isit <- grepl(\"Coal|coal\", SCCdata$EI.Sector)\n  \n  codes <- subset(SCCdata$SCC, isit, drop=FALSE)\n  \n  coal.data <- subset(NEI, NEI$SCC %in% codes)\n  cat(\"Total data\", dim(NEI),\"\\n\")\n  cat(\"Data from Coal sources\", dim(coal.data),\"\\n\")\n  \n  return(coal.data)\n  return(NEI)\n}\n\ncreatemyplot <- function(mydata, outputfilename) {\n  #x=Global Active Power(kilowatts)\n  #y=Frequency\n  # Type of graph: Histogram\n  \n  library(ggplot2)\n  \n  cat(\"Creating plot\",outputfilename,\"\\n\") \n  \n  png(file = outputfilename, width = 480, height = 480) ## Open the PNG Device\n  \n  \n  # create four plots of Baltimore emissions based upon point type\n  # point, nonpoint, onroad, nonroad\n  \n  g <- qplot(year, Emissions, data=mydata, geom = \"point\")\n  g <- g + geom_smooth(method=\"lm\")\n  g <- g + ylab(\"Emissions from Coal\")\n  print(g)\n  dev.off()\n  \n  \n  cat(outputfilename, \"written to disc\\n\")\n  \n}\n\n#the main function\ncoal.data <- read.Interpret()\noutputfilename=\"plot4.png\"\ncreatemyplot(coal.data, outputfilename)\n",
+    "created" : 1456614296094.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1095940900",
+    "id" : "DDCE9514",
+    "lastKnownWriteTime" : 1456519995,
+    "path" : "C:/Users/toby.kraft/Dropbox/coursera/exploratory-data-analysis/project2/plot4.R",
+    "project_path" : "plot4.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

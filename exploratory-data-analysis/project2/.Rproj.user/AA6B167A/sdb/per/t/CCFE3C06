@@ -1,0 +1,18 @@
+{
+    "contents" : "# Plot number 5\n\n# How have emissions from motor vehicle sources changed from 1999–2008 in Baltimore City?\n\n\nread.Interpret <- function() {\n  \n  \n  ## This first line will likely take a few seconds. Be patient!\n  NEI <- readRDS(\"summarySCC_PM25.rds\")\n  SCCdata <- readRDS(\"Source_Classification_Code.rds\")\n  \n  #head(NEI)\n  #head(SCC)\n  \n  two.emissions <- subset(NEI, fips==\"24510\"|fips==\"06037\")\n  isit <- grepl(\"vehicle\", SCCdata$SCC.Level.Two, ignore.case = TRUE)\n  codes <- subset(SCCdata$SCC, isit, drop=FALSE)\n  \n  car.data <- subset(two.emissions, two.emissions$SCC %in% codes)\n  \n  car.data <- as.data.frame(lapply(car.data, function(x) {gsub(\"24510\", \"Baltimore City\", x) }))\n  car.data <- as.data.frame(lapply(car.data, function(x) {gsub(\"06037\", \"Los Angeles County\", x) }))\n  \n\n  return(car.data)\n}\n\ncreatemyplot <- function(mydata, outputfilename) {\n  #x=Global Active Power(kilowatts)\n  #y=Frequency\n  # Type of graph: Histogram\n  \n  library(ggplot2)\n  \n  cat(\"Creating plot\",outputfilename,\"\\n\") \n  \n  png(file = outputfilename, width = 480, height = 480) ## Open the PNG Device\n  \n  \n  # create four plots of Baltimore emissions based upon point type\n  # point, nonpoint, onroad, nonroad\n  \n\n  g <- qplot(year, Emissions, data=mydata, geom = \"point\", facets = .~fips)\n  #g <- g + geom_smooth(method=\"lm\")\n  #g <- g + ggtitle(\"Emissions from Motor Vehicles\")\n  #g <- g + theme(axis.text.y = element_blank()) \n  #g <- g + coord_cartesian(ylim = c(0,5000))\n  print(g)\n  dev.off()\n  \n  \n  cat(outputfilename, \"written to disc\\n\")\n  \n}\n\n#the main function\ncar.data <- read.Interpret()\noutputfilename=\"plot6.png\"\ncreatemyplot(car.data, outputfilename)\n",
+    "created" : 1456614325207.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3176406116",
+    "id" : "CCFE3C06",
+    "lastKnownWriteTime" : 1456524642,
+    "path" : "C:/Users/toby.kraft/Dropbox/coursera/exploratory-data-analysis/project2/plot6.R",
+    "project_path" : "plot6.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

@@ -1,0 +1,21 @@
+---
+title: "course-project-2"
+author: "cubeconvict"
+date: "April 15, 2016"
+output: pdf_document
+---
+
+# Title 
+
+##Synopsis
+
+##Data Processing
+
+```{r}
+
+```
+
+##Results
+```{r}
+
+```

@@ -1,0 +1,18 @@
+{
+    "contents" : "# Plot number 1\n\n# Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? \n# Using the base plotting system, make a plot showing the total PM2.5 emission from \n# all sources for each of the years 1999, 2002, 2005, and 2008.\n\nread.Interpret <- function(data.file=\"summarySCC_PM25.rds\", code.file=\"Source_Classification_Code.rds\") {\n  \n  \n  ## This first line will likely take a few seconds. Be patient!\n  NEI <- readRDS(\"summarySCC_PM25.rds\")\n\n\n  return(NEI)\n}\n\nNEI <- read.Interpret()\ntotal.emissions <- tapply(NEI$Emissions, NEI$year, FUN=sum)\n\noutputfilename <- \"plot1.png\"\n\n\npng(file = outputfilename, width = 480, height = 480) ## Open the PNG Device\n\ncat(\"Creating plot\",outputfilename,\"\\n\") \n\nbarplot(total.emissions/1000000, xlab=\"Year\", ylab=\"Total pm2.5 Emissions (millions)\")\ncat(outputfilename, \"written to disc\\n\")\n\n\ndev.off()\n\n#rm(list = ls())\n\n",
+    "created" : 1456613406242.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1494214309",
+    "id" : "E3B752FE",
+    "lastKnownWriteTime" : 1460040430,
+    "path" : "C:/Users/toby.kraft/Dropbox/coursera/exploratory-data-analysis/project2/plot1.R",
+    "project_path" : "plot1.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

@@ -1,0 +1,18 @@
+{
+    "contents" : "# Plot number 2\n\n# Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips == \"24510\") from 1999 to 2008? \n# Use the base plotting system to make a plot answering this question.\n\nread.Interpret <- function(data.file=\"summarySCC_PM25.rds\", code.file=\"Source_Classification_Code.rds\") {\n  \n  \n  ## This first line will likely take a few seconds. Be patient!\n  NEI <- readRDS(\"summarySCC_PM25.rds\")\n  #SCC <- readRDS(\"Source_Classification_Code.rds\")\n  \n  #head(NEI)\n  #head(SCC)\n  \n  return(NEI)\n  #return(SCC)\n}\n\ncreatemyplot <- function(mydata, outputfilename) {\n  #x=Global Active Power(kilowatts)\n  #y=Frequency\n  # Type of graph: Histogram\n  \n  cat(\"Creating plot\",outputfilename,\"\\n\") \n  \n  png(file = outputfilename, width = 480, height = 480) ## Open the PNG Device\n  \n  \n  plot(baltimore.emissions$year, baltimore.emissions$Emissions, ylab = \"PM25 Emissions\", xlab = \"Year\", main=\"Baltimore\", col=\"Red\" )\n  \n  fit <- lm( Emissions ~ year, baltimore.emissions)\n  abline(fit, col=\"blue\", lwd=2)\n  \n  \n  cat(outputfilename, \"written to disc\\n\")\n  dev.off()\n  \n}\n\n#the main functtion\nread.Interpret()\nbaltimore.emissions <- subset(NEI, fips==\"24510\"&Pollutant==\"PM25-PRI\")\noutputfilename=\"plot2.png\"\ncreatemyplot(baltimore.emissions, outputfilename)\n",
+    "created" : 1456613520332.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2485937079",
+    "id" : "F234B59D",
+    "lastKnownWriteTime" : 1456513729,
+    "path" : "C:/Users/toby.kraft/Dropbox/coursera/exploratory-data-analysis/project2/plot2.R",
+    "project_path" : "plot2.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

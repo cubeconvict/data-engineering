@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"course-project-2\"\nauthor: \"cubeconvict\"\ndate: \"April 15, 2016\"\noutput: pdf_document\n---\n\n# Title \n\n##Synopsis\n\n##Data Processing\n\n```{r}\n\n```\n\n##Results\n```{r}\n\n```",
+    "created" : 1460749154843.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1679367895",
+    "id" : "CB2DE3E5",
+    "lastKnownWriteTime" : 1460758324,
+    "last_content_update" : 0,
+    "path" : "C:/Users/toby.kraft/Dropbox/coursera/reproducible-research/RepData_PeerAssessment2/course-project-2.Rmd",
+    "project_path" : "course-project-2.Rmd",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
