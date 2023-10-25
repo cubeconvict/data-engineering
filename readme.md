@@ -2,7 +2,7 @@
 Here are a few projects I've put together
 
 ## A selection of R programming
-These are artifacts coming from several courses that I took as part of the [Data Science Specialization](https://www.coursera.org/specializations/jhu-data-science) on Coursera by Johns Hopkins.
+These are artifacts coming from several courses that I took as part of the [Data Science Specialization](https://www.coursera.org/specializations/jhu-data-science) on Coursera by Johns Hopkins. See the [ReadMe](r-programming) in that folder for more information and samples.
 
 
 
