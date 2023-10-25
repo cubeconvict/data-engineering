@@ -1,7 +1,13 @@
 #ignore all data files
 *.csv
 *.json
+*.zip
+
 myfile.html
+#bunches of pdfs from the classes
+*.pdf
+
+
 from_stack_overflow*
 *temp*
 secrets.h
