@@ -3,6 +3,8 @@
 *.json
 *.zip
 
+*.png
+
 myfile.html
 #bunches of pdfs from the classes
 *.pdf
