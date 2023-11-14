@@ -6,6 +6,7 @@ import re
 
 nan_value = float("NaN") 
 
+#############Didn't use this function, but I want to save it, used the extract method instead once I got the patter right
 def parse_name(mystring):
     pattern = re.compile(r"""(?P<name>.*?) #everything up to the open paren is the name
                         \((?P<year>\d{4})\) #everything between the parentheses is the name, this will need to be changed to look for four digits
@@ -16,7 +17,7 @@ def parse_name(mystring):
     name = match.group("name")
     year = int(match.group("year"))
     description = match.group("description")
-        
+            
     new_row = pd.Series([name,year,description])  
     return(new_row)
 
@@ -59,12 +60,6 @@ def scrape_bgg(this_url):
 url = 'https://boardgamegeek.com/browse/boardgame/page/1?sort=bggrating&sortdir=desc'
 mydata = scrape_bgg(url)
 
-for each_row in mydata['Name']:
-    new_row = parse_name(each_row)
-    print(new_row)
-
-
-'''
 url2 = 'https://boardgamegeek.com/browse/boardgame/page/2?sort=bggrating&sortdir=desc'
 mydata2 = scrape_bgg(url2)
 
@@ -84,7 +79,17 @@ url7 = 'https://boardgamegeek.com/browse/boardgame/page/7?sort=bggrating&sortdir
 mydata7 = scrape_bgg(url7)
 
 mydata = pd.concat([mydata, mydata2, mydata3, mydata4, mydata5,mydata6,mydata7])
-'''
+# extract first and last names using a regular expression
+pattern = re.compile(r"""(?P<name>.*?) #everything up to the open paren is the name
+                        \((?P<year>\d{4})\) #everything between the parentheses is the name, this will need to be changed to look for four digits
+                        (?P<description>.*) #from the close paren to the end
+                        """, re.VERBOSE)
+mydata[['New Name', 'year','description']] = mydata['Name'].str.extract(pattern, expand=True)
+mydata.reset_index(inplace=True)
+mydata = mydata.drop(['Name', 'index'], axis=1)
+mydata = mydata.rename(columns={"New Name":"Name"})
+
+#TODO: Could clean this even better if you dropped all columns where "rank" =! N/A or a number.  There are trash bits in there from interjected rows.
 
 # Export to csv
 mydata.to_csv("bgg.csv")
