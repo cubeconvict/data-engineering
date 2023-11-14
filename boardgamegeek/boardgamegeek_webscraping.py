@@ -4,24 +4,23 @@ import requests
 import pandas as pd
 import re
 
+nan_value = float("NaN") 
+
 def parse_name(mystring):
     pattern = re.compile(r"""(?P<name>.*?) #everything up to the open paren is the name
                         \((?P<year>\d{4})\) #everything between the parentheses is the name, this will need to be changed to look for four digits
                         (?P<description>.*) #from the close paren to the end
                         """, re.VERBOSE)
-    
+
     match = pattern.match(str(mystring))
     name = match.group("name")
     year = int(match.group("year"))
     description = match.group("description")
-    
-
-    new_row = pd.Series([name,year,description])
         
-    
+    new_row = pd.Series([name,year,description])  
     return(new_row)
 
-
+#########################
 def scrape_bgg(this_url):
 #Replace the dots below
     page = requests.get(this_url)
@@ -46,7 +45,7 @@ def scrape_bgg(this_url):
         cols_df = cols_df.transpose()
         data = pd.concat([data, cols_df])
 
-    nan_value = float("NaN") 
+    
     data.replace("", nan_value, inplace=True) 
     data.dropna(how='all', axis=1, inplace=True) 
     data.columns = ['Rank','Name','Geek Rating','Avg Rating','Num Voters']
@@ -56,12 +55,13 @@ def scrape_bgg(this_url):
     #dataframe has all zeros for index
     data.reset_index(inplace=True)
     return data
-
+###################################################################################
 url = 'https://boardgamegeek.com/browse/boardgame/page/1?sort=bggrating&sortdir=desc'
 mydata = scrape_bgg(url)
 
-new_row = parse_name(mydata['Name'])
-print(new_row)
+for each_row in mydata['Name']:
+    new_row = parse_name(each_row)
+    print(new_row)
 
 
 '''
