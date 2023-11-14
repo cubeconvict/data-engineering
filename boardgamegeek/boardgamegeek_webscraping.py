@@ -90,6 +90,7 @@ mydata = mydata.drop(['Name', 'index'], axis=1)
 mydata = mydata.rename(columns={"New Name":"Name"})
 
 #TODO: Could clean this even better if you dropped all columns where "rank" =! N/A or a number.  There are trash bits in there from interjected rows.
+#TODO: Write a functio instead of putting in lines to scrape each page.  Something like tell it to scrape the first seven pages and it loops seven times
 
 # Export to csv
 mydata.to_csv("bgg.csv")
