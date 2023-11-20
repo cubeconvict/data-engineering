@@ -32,26 +32,34 @@ def scrape_bgg(this_url):
 
     for row in soup.find_all('table')[0].find_all('tr'):
         cols = row.find_all('td')
-        
+        if row.find('a', class_="primary") is not None:
+            link = row.find('a', class_="primary")['href']
+            link = "https://boardgamegeek.com/"+link
+        else:
+            link = ""
         ### Dont touch this part
         #create a list for each row
         cols = [i.text for i in cols]
+        cols.append(link)
+        
 
         cols = [re.sub(r'\n', '', cell) for cell in cols]
         cols = [re.sub(r'\t', '', cell) for cell in cols]
 
         
+        
         ###
         cols_df = pd.DataFrame(cols)
         cols_df = cols_df.transpose()
         data = pd.concat([data, cols_df])
-
+        
+    
     
     data.replace("", nan_value, inplace=True) 
     data.dropna(how='all', axis=1, inplace=True) 
-    data.columns = ['Rank','Name','Geek Rating','Avg Rating','Num Voters']
+    data.columns = ['Rank','Name','Geek Rating','Avg Rating','Num Voters','Link']
     
-    
+    #print(data)
 
     #dataframe has all zeros for index
     data.reset_index(inplace=True)
@@ -59,6 +67,7 @@ def scrape_bgg(this_url):
 ###################################################################################
 url = 'https://boardgamegeek.com/browse/boardgame/page/1?sort=bggrating&sortdir=desc'
 mydata = scrape_bgg(url)
+
 
 url2 = 'https://boardgamegeek.com/browse/boardgame/page/2?sort=bggrating&sortdir=desc'
 mydata2 = scrape_bgg(url2)
@@ -78,7 +87,9 @@ mydata6 = scrape_bgg(url6)
 url7 = 'https://boardgamegeek.com/browse/boardgame/page/7?sort=bggrating&sortdir=desc'
 mydata7 = scrape_bgg(url7)
 
+
 mydata = pd.concat([mydata, mydata2, mydata3, mydata4, mydata5,mydata6,mydata7])
+
 # extract first and last names using a regular expression
 pattern = re.compile(r"""(?P<name>.*?) #everything up to the open paren is the name
                         \((?P<year>\d{4})\) #everything between the parentheses is the name, this will need to be changed to look for four digits
