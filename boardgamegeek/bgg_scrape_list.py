@@ -22,7 +22,7 @@ def parse_name(mystring):
     return(new_row)
 
 #########################
-def scrape_bgg(this_url):
+def scrape_list_page(this_url):
 #Replace the dots below
     page = requests.get(this_url)
     html_data = page.text
@@ -66,26 +66,25 @@ def scrape_bgg(this_url):
     return data
 ###################################################################################
 url = 'https://boardgamegeek.com/browse/boardgame/page/1?sort=bggrating&sortdir=desc'
-mydata = scrape_bgg(url)
-
+mydata = scrape_list_page(url)
 
 url2 = 'https://boardgamegeek.com/browse/boardgame/page/2?sort=bggrating&sortdir=desc'
-mydata2 = scrape_bgg(url2)
+mydata2 = scrape_list_page(url2)
 
 url3 = 'https://boardgamegeek.com/browse/boardgame/page/3?sort=bggrating&sortdir=desc'
-mydata3 = scrape_bgg(url3)
+mydata3 = scrape_list_page(url3)
 
 url4 = 'https://boardgamegeek.com/browse/boardgame/page/4?sort=bggrating&sortdir=desc'
-mydata4 = scrape_bgg(url4)
+mydata4 = scrape_list_page(url4)
 
 url5 = 'https://boardgamegeek.com/browse/boardgame/page/5?sort=bggrating&sortdir=desc'
-mydata5 = scrape_bgg(url5)
+mydata5 = scrape_list_page(url5)
 
 url6 = 'https://boardgamegeek.com/browse/boardgame/page/6?sort=bggrating&sortdir=desc'
-mydata6 = scrape_bgg(url6)
+mydata6 = scrape_list_page(url6)
 
 url7 = 'https://boardgamegeek.com/browse/boardgame/page/7?sort=bggrating&sortdir=desc'
-mydata7 = scrape_bgg(url7)
+mydata7 = scrape_list_page(url7)
 
 
 mydata = pd.concat([mydata, mydata2, mydata3, mydata4, mydata5,mydata6,mydata7])
@@ -102,6 +101,8 @@ mydata = mydata.rename(columns={"New Name":"Name"})
 
 #TODO: Could clean this even better if you dropped all columns where "rank" =! N/A or a number.  There are trash bits in there from interjected rows.
 #TODO: Write a functio instead of putting in lines to scrape each page.  Something like tell it to scrape the first seven pages and it loops seven times
+
+
 
 # Export to csv
 mydata.to_csv("bgg.csv")
