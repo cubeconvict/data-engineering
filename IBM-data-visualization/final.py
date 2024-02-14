@@ -42,7 +42,7 @@ app.layout = html.Div([
             id='dropdown-statistics', 
             options=[
                     {'label': 'Yearly Statistics', 'value': 'Yearly Statistics'},
-                    {'label': 'Recession Period Statistics', 'value': 'Recession Period Statistic'},
+                    {'label': 'Recession Period Statistics', 'value': 'Recession Period Statistics'},
                     ],
             value='Select Statistics',
             placeholder='Select a report type',
@@ -93,7 +93,7 @@ def update_output_container(selected_statistics, selected_year):
         R_chart1 = dcc.Graph(
             figure=px.line(yearly_rec, 
                 x='Year',
-                y='Average Automobile Sales',
+                y='Automobile_Sales',
                 title="Average Automobile Sales fluctuation over Recession Period"))
 
 
@@ -107,7 +107,7 @@ def update_output_container(selected_statistics, selected_year):
         )
 
         # Plot 3 : Pie chart for total expenditure share by vehicle type during recessions
-        exp_rec= recession_data.groupby('Year')['Automobile_Sales'].mean().reset_index()
+        exp_rec= recession_data.groupby('Vehicle_Type')['Advertising_Expenditure'].mean().reset_index()
         R_chart3 = dcc.Graph(
                 figure=px.pie(exp_rec,
                 values='Advertising_Expenditure',
@@ -139,7 +139,7 @@ def update_output_container(selected_statistics, selected_year):
         yearly_as= yearly_data.groupby('Year')['Automobile_Sales'].sum().reset_index()
         Y_chart1 = dcc.Graph(
             figure=px.line(yearly_as,
-            x='Month',
+            x='Year',
             y='Automobile_Sales',
             title="Total Monthly Automobile Sales"
             ))
