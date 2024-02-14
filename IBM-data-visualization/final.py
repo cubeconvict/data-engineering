@@ -136,12 +136,12 @@ def update_output_container(selected_statistics, selected_year):
         yearly_data = data[data['Year'] == selected_year]
                               
         # Plot 1 :Yearly Automobile sales using line chart for the whole period.
-        yearly_as= yearly_data.groupby('Year')['Automobile_Sales'].sum().reset_index()
+        yearly_as= data.groupby('Year')['Automobile_Sales'].sum().reset_index()
         Y_chart1 = dcc.Graph(
             figure=px.line(yearly_as,
             x='Year',
             y='Automobile_Sales',
-            title="Total Monthly Automobile Sales"
+            title="Total Yearly Automobile Sales"
             ))
 
             
@@ -155,26 +155,27 @@ def update_output_container(selected_statistics, selected_year):
 
 
         # Plot bar chart for average number of vehicles sold during the given year
-        avr_vdata= yearly_data.groupby('Year')['Automobile_Sales'].mean().reset_index()
+        avr_vdata= yearly_data.groupby('Year')['Automobile_Sales'].sum().reset_index()
         Y_chart3 = dcc.Graph(
             figure = px.bar(avr_vdata,
                 x='Year',
                 y='Automobile_Sales',
-                title='Average Vehicles Sold by Vehicle Type in the year {}'.format(input_year)
+                title='Number of Vehicles Sold  year {}'.format(selected_year)
                 )
                 )
 
         # Plot 4 Total Advertisement Expenditure for each vehicle using pie chart
-        exp_data= yearly_data.groupby('Vehicle_Type')['Automobile_Sales'].mean().reset_index()
+        exp_data= yearly_data.groupby('Vehicle_Type')['Advertising_Expenditure'].mean().reset_index()
         Y_chart4 = dcc.Graph(
              figure=px.pie(exp_data,
             values='Advertising_Expenditure',
             names='Vehicle_Type',
-            title="Total Advertising Expenditure By Vehicle Type"))
+            title="Total Advertising Expenditure in {} By Vehicle Type".format(selected_year))
+            )
 
         return [
-                html.Div(className='chart-item', children=[html.Div(children=Y_chart1),html.Div(children=Y_chart2)],style={'display': 'flex'}),
-                html.Div(className='chart-item', children=[html.Div(children=Y_chart3),html.Div(children=Y_chart4)],style={'display': 'flex'})
+                html.Div(className='chart-item', children=[html.Div(children=Y_chart1),html.Div(children=Y_chart2)]),
+                html.Div(className='chart-item', children=[html.Div(children=Y_chart3),html.Div(children=Y_chart4)])
                 ]
     else:
         return None
