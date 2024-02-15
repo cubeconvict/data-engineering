@@ -57,7 +57,7 @@ app.layout = html.Div([
     ]),
     #TASK 2.3: Add a division for output display
     html.Div([
-        html.Div(id='output-container', className='chart-grid', style={'flex': 1})
+        html.Div(id='output-container', className='chart-grid')
     ])
 ])
 
