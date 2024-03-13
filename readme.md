@@ -1,8 +1,4 @@
 # Data Science projects
-Here are a few projects I've put together
-
-## A selection of R programming
-These are artifacts coming from several courses that I took as part of the [Data Science Specialization](https://www.coursera.org/specializations/jhu-data-science) on Coursera by Johns Hopkins. See the [ReadMe](r-programming) in that folder for more information and samples.
 
 
 ## From the IBM Data Science Professional Certificate class
@@ -35,3 +31,6 @@ One of my friends insists that he won't try games rated under 7.0 on bgg and so 
 [See my struggles](scrape_old.py)
 
 [How you should do it](scrape.py)
+
+## A selection of R programming
+These are artifacts coming from several courses that I took as part of the [Data Science Specialization](https://www.coursera.org/specializations/jhu-data-science) on Coursera by Johns Hopkins. See the [ReadMe](r-programming) in that folder for more information and samples.
