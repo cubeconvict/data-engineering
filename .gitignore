@@ -17,6 +17,7 @@ myfile.html
 #bunches of pdfs from the classes
 *.pdf
 
+!not_ignore /IBM_capstone/IBM-datascience-capstone-coursera.pdf
 
 from_stack_overflow*
 *temp*
