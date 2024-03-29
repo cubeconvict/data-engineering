@@ -1,5 +1,5 @@
 from bs4 import BeautifulSoup
-import html5lib
+#import html5lib
 import requests
 import pandas as pd
 import re
@@ -26,7 +26,7 @@ def scrape_list_page(this_url):
 #Replace the dots below
     page = requests.get(this_url)
     html_data = page.text
-    soup= BeautifulSoup(html_data, "html5lib")
+    soup= BeautifulSoup(html_data, "html.parser")
 
     data = pd.DataFrame()
 
@@ -57,7 +57,7 @@ def scrape_list_page(this_url):
     
     data.replace("", nan_value, inplace=True) 
     data.dropna(how='all', axis=1, inplace=True) 
-    data.columns = ['Rank','Name','Geek Rating','Avg Rating','Num Voters','Link']
+    data.columns = ['Rank','Name','Geek_Rating','Avg_Rating','Num_Voters','Link']
     
     #print(data)
 
@@ -87,22 +87,39 @@ url7 = 'https://boardgamegeek.com/browse/boardgame/page/7?sort=bggrating&sortdir
 mydata7 = scrape_list_page(url7)
 
 
+
 mydata = pd.concat([mydata, mydata2, mydata3, mydata4, mydata5,mydata6,mydata7])
+
+
 
 # extract first and last names using a regular expression
 pattern = re.compile(r"""(?P<name>.*?) #everything up to the open paren is the name
                         \((?P<year>\d{4})\) #everything between the parentheses is the name, this will need to be changed to look for four digits
                         (?P<description>.*) #from the close paren to the end
                         """, re.VERBOSE)
+# Create new columns and insert the data extracted from the string
 mydata[['New Name', 'year','description']] = mydata['Name'].str.extract(pattern, expand=True)
-mydata.reset_index(inplace=True)
+
+
 mydata = mydata.drop(['Name', 'index'], axis=1)
 mydata = mydata.rename(columns={"New Name":"Name"})
 
-#TODO: Could clean this even better if you dropped all columns where "rank" =! N/A or a number.  There are trash bits in there from interjected rows.
-#TODO: Write a functio instead of putting in lines to scrape each page.  Something like tell it to scrape the first seven pages and it loops seven times
 
 
+# There are two columns where rows without numbers are invalid.
+# First, coerce them into numbers so that any content other than numbers is replaced with NaN
+mydata["Rank"] = pd.to_numeric(mydata["Rank"], errors='coerce')
+mydata["Geek_Rating"] = pd.to_numeric(mydata["Geek_Rating"], errors='coerce')
+
+#then drop anything in those columns that is NaN
+mydata.dropna(subset=["Rank"], inplace=True)
+mydata.dropna(subset=["Geek_Rating"], inplace=True)
+
+# We want the list to be strictly those with 
+mydata = mydata.loc[mydata['Geek_Rating'] >= 7]
+
+#TODO: Write a functio instead of putting in lines to scrape each page. Something like tell it to start with page 1 and then increment until it receives a page that contains a rating below 7
 
 # Export to csv
-mydata.to_csv("bgg.csv")
+#header = ['Rank','Name','Geek_Rating','Avg_Rating','Num_Voters','Link']
+mydata.to_csv("bgg.csv", index=False)
