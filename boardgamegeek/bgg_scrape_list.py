@@ -65,6 +65,8 @@ def scrape_list_page(this_url):
     data.reset_index(inplace=True)
     return data
 ###################################################################################
+#TODO: Write a function instead of putting in lines to scrape each page. Something like tell it to start with page 1 and then increment until it receives a page that contains a rating below 7
+
 url = 'https://boardgamegeek.com/browse/boardgame/page/1?sort=bggrating&sortdir=desc'
 mydata = scrape_list_page(url)
 
@@ -87,10 +89,8 @@ url7 = 'https://boardgamegeek.com/browse/boardgame/page/7?sort=bggrating&sortdir
 mydata7 = scrape_list_page(url7)
 
 
-
+#mashem all together baby
 mydata = pd.concat([mydata, mydata2, mydata3, mydata4, mydata5,mydata6,mydata7])
-
-
 
 # extract first and last names using a regular expression
 pattern = re.compile(r"""(?P<name>.*?) #everything up to the open paren is the name
@@ -98,11 +98,10 @@ pattern = re.compile(r"""(?P<name>.*?) #everything up to the open paren is the n
                         (?P<description>.*) #from the close paren to the end
                         """, re.VERBOSE)
 # Create new columns and insert the data extracted from the string
-mydata[['New Name', 'year','description']] = mydata['Name'].str.extract(pattern, expand=True)
+mydata[['Name', 'year','description']] = mydata['Name'].str.extract(pattern, expand=True)
 
 
-mydata = mydata.drop(['Name', 'index'], axis=1)
-mydata = mydata.rename(columns={"New Name":"Name"})
+mydata = mydata.drop(['index'], axis=1)
 
 
 
@@ -118,8 +117,6 @@ mydata.dropna(subset=["Geek_Rating"], inplace=True)
 # We want the list to be strictly those with 
 mydata = mydata.loc[mydata['Geek_Rating'] >= 7]
 
-#TODO: Write a functio instead of putting in lines to scrape each page. Something like tell it to start with page 1 and then increment until it receives a page that contains a rating below 7
 
 # Export to csv
-#header = ['Rank','Name','Geek_Rating','Avg_Rating','Num_Voters','Link']
 mydata.to_csv("bgg.csv", index=False)
