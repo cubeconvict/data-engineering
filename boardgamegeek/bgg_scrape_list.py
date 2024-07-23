@@ -65,7 +65,21 @@ def scrape_list_page(this_url):
     data.reset_index(inplace=True)
     return data
 ###################################################################################
-#TODO: Write a function instead of putting in lines to scrape each page. Something like tell it to start with page 1 and then increment until it receives a page that contains a rating below 7
+#TODO: Write a while loop instead of putting in lines to scrape each page. Something like tell it to start with page 1 and then increment until it receives a page that contains a rating below 7
+'''
+i = 1
+mydata = []
+rank_7 = True
+while rank_7 is True:
+    url = 'foo'+i+'bar'
+    newdata = scrape_list_page(url)
+    mydata = pd.concat[mydata, newdata]
+    if newdata has only rank values > 7 
+        then i = i + 1
+    else:
+        rank_7 = False
+
+'''
 
 url = 'https://boardgamegeek.com/browse/boardgame/page/1?sort=bggrating&sortdir=desc'
 mydata = scrape_list_page(url)
@@ -99,7 +113,6 @@ pattern = re.compile(r"""(?P<name>.*?) #everything up to the open paren is the n
                         """, re.VERBOSE)
 # Create new columns and insert the data extracted from the string
 mydata[['Name', 'year','description']] = mydata['Name'].str.extract(pattern, expand=True)
-
 
 mydata = mydata.drop(['index'], axis=1)
 
